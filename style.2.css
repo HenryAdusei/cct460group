@@ -21,13 +21,7 @@ Tags: seasonal, holiday, threaded-comments, sticky-post, right-sidebar,custom-he
 
 
 /* Begin Typography & Colors */
-body {
-	font-size: 62.5%; /* Resets 1em to 10px */
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-	background: #AB82FF url('images/bg3.jpg') no-repeat top left;
-	color: #333;
-	text-align: center;
-	}
+
 
 #header { background: transparent url('images/arr.gif') no-repeat bottom left; }
 

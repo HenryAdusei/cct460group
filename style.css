@@ -76,13 +76,22 @@ summary {
 main {
 	margin: auto;
     	padding: 0;
-   	width: 66.75%; /* 900px with 30px margin on either side */
+   	width: 70%; /* 900px with 30px margin on either side */
+   	float: left;
 }
 
 header,
 footer {
 	text-align: center;
 	}
+aside {
+	float: right;
+	display: inline; 
+	background: #E9E9E9;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+}
 
 audio,
 canvas,
@@ -586,7 +595,7 @@ a:active {
 	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 25em;
+	padding: 5px 5px 10x 5px;
 	
 }
 

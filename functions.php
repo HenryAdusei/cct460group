@@ -132,23 +132,6 @@ function authentic_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'authentic_scripts' );
 
-//Adding Navigation to Post Page
-function cd_posts_navigation() {
-	// Don't print empty markup if there's only one page.
-	if ( $GLOBALS['wp_query']->max_num_pages < 3 ) {
-		return;
-	}
-	?>
-	<nav class="navigation posts-navigation" role="navigation">
-		<h2 class="screen-reader-text"><?php _e( 'Posts navigation', 'codediva' ); ?></h2>
-		<div class="nav-links">
-			<div class="nav-previous"><?php next_posts_link(__( '&larr; Previous', 'codediva' ) ); ?></div>			
-			<div class="nav-next"><?php previous_posts_link( __( 'Next &rarr;', 'codediva' )  ); ?></div>
-		</div><!-- .nav-links -->
-	</nav><!-- .navigation -->
-	<?php
-}
-
 /**
  * Implement the Custom Header feature.
  */

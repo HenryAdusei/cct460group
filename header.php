@@ -47,5 +47,18 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+<!-- Place somewhere in the <body> of your page -->
+	<div class="flexslider">
+	<ul class="slides">
+		<li>
+			<img src="http://img.alibaba.com/photo/10839765/New_Jeep_Cherokee_Full_Suspension_Mountain_Bike_Shimano.jpg" />
+		</li>
+		<li>
+			<img src="http://www.b4hottawa.org/B4H/Donate_a_Bike_files/bike%20-%20road%20bike.jpg" />
+		</li>
+		<li>
+			<img src="http://www.whycycle.co.uk/cms-files/0woodstok.jpg" />
+		</li>
+	</ul>
+	</div>
 	<div id="content" class="site-content">

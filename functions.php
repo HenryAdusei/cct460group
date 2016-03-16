@@ -115,7 +115,9 @@ add_action( 'widgets_init', 'authentic_widgets_init' );
  */
 function authentic_scripts() {
 	wp_enqueue_style( 'authentic-style', get_stylesheet_uri() );
-
+	
+	wp_enqueue_style( 'authentic-flexslider', get_stylesheet_uri() );
+		
 // Add Google Fonts: Lobster, Alex Brush, Kaushan Script, Belleza, Italiana, Linden Hill
  
 	wp_enqueue_style( 'authentic-google-fonts','https://fonts.googleapis.com/css?family=Lobster|Alex+Brush|Kaushan+Script|Belleza|Italiana|Linden+Hill' );

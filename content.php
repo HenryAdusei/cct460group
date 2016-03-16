@@ -1,0 +1,1 @@
+<?php if ( is_search() || is_home() || is_archive() ) : ?>

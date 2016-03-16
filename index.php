@@ -15,20 +15,6 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-	<!-- Place somewhere in the <body> of your page -->
-	<div class="flexslider">
-	<ul class="slides">
-		<li>
-			<img src="http://salsacycles.com/files/bikes/bikes_Beargrease_2013.jpg" width="200" height="200"/>
-		</li>
-		<li>
-			<img src="http://bikeshopwarehouse.com/ProductImages/Win-Rapide_Disc-01.jpg" width="200" height="200" />
-		</li>
-		<li>
-			<img src="http://salsacycles.com/files/bikes/bikes_Mukluk2_2013_2.jpg" width="200" height="200" />
-		</li>
-	</ul>
-	</div>	
 		<main id="main" class="site-main" role="main">
 
 		<?php

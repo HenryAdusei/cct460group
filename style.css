@@ -13,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Authentic is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Authentic is base on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -76,19 +76,22 @@ summary {
 main {
 	margin: auto;
     	padding: 0;
-   	width: 70%; /* 900px with 30px margin on either side */
+   	width: 65%; /* 900px with 30px margin on either side */
    	float: left;
 }
 
+
 header,
-footer {
+footer,
+menu {
 	text-align: center;
-	}
+}
+
 aside {
 	float: right;
-	display: inline; 
-	background: #E9E9E9;
-	margin: 0;
+	display: block; 
+	background: #737373;
+	margin: 20px;
 	padding: 0;
 	width: 25%;
 }
@@ -292,11 +295,15 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: Arial, sans-serif;
+	color: #000000;
+	font-family: Belleza, sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
+}
+.site-content {
+	font-size: 1em;
+	line-height: 1.2em;
 }
 
 h1,
@@ -306,6 +313,10 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: Kaushan Script, cursive;
+	line-height: 1.25em;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
 	
 }
 
@@ -560,13 +571,13 @@ a {
 }
 
 a:visited {
-	color: #0099FF;
+	color: #FF0000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #e9e9e9;
 }
 
 a:focus {
@@ -586,6 +597,7 @@ a:active {
 	display: block;
 	float: left;
 	width: 100%;
+
 	
 	
 	
@@ -615,6 +627,7 @@ a:active {
 	background-color:#000000;
 	padding: 10px 16px 10px 16px;
 	color: #FFFFFF;
+	
 }
 
 .main-navigation ul ul {
@@ -891,6 +904,7 @@ a:active {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
+	
 }
 
 /* Make sure embeds and iframes fit their containers. */

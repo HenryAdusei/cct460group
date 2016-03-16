@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<?php
 			$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-				$postnumber = array('showposts' => 4, 'cat' => '190', 'paged' => $paged );
+				$postnumber = array('showposts' => 4, 'cat' => '200', 'paged' => $paged );
 				$my_query = new WP_Query($postnumber);
 			?>
 			<?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>

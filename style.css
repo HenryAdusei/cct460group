@@ -627,7 +627,6 @@ a:active {
 	position: relative;
 	border-right: 1px solid #FFFFFF;
 
-	
 }
 
 .main-navigation a {
@@ -700,7 +699,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 50em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -708,6 +707,26 @@ a:active {
 		display: block;
 	}
 }
+
+/* This code sets the menu to display properly on wide screens*/
+
+@media screen and (min-width: 50em) {
+
+.main-navigation,
+.main-navigation-toggled {
+	position: relative;
+	min-height: 3.5em;
+	max-width: 80em;
+	margin: 0 auto;
+	padding: 0 3.5em;
+}
+
+.main-navigation ul,
+.main-navigation-toggled ul {
+	
+	text-align: center;
+}
+
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -730,6 +749,8 @@ a:active {
 	text-align: right;
 	width: 50%;
 }
+
+
 
 /*--------------------------------------------------------------
 # Accessibility

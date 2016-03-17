@@ -47,7 +47,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-<!-- Place somewhere in the <body> of your page -->
+<!-- Here is where the slider images are located. -->
 	<div class="flexslider">
 	<ul class="slides">
 		<li>

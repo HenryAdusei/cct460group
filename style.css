@@ -712,15 +712,6 @@ a:active {
 
 @media screen and (min-width: 50em) {
 
-.main-navigation,
-.main-navigation-toggled {
-	position: relative;
-	min-height: 3.5em;
-	max-width: 80em;
-	margin: auto 100%;
-	padding: 0 3.5em;
-}
-
 .main-navigation ul,
 .main-navigation-toggled ul {
 	

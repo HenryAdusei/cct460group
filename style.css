@@ -76,9 +76,9 @@ summary {
 }
 
 main {
-	margin: auto;
+	margin: 0;
     	padding: 0;
-   	width: 60%; /* 900px with 30px margin on either side */
+   	width: 70% 
 
 }
 
@@ -862,15 +862,15 @@ a:active {
 	max-width: 100%;
 }
 
-.secondary {
+#secondary {
 	position: relative;
 	padding: 1.8 em 1.4em 0;
+	background-color: #737373;
 }
 
 .widget {
 	margin: 0 0 1.5em;
 	padding: 1.8em;
-	
 	
 }
 
@@ -883,15 +883,18 @@ a:active {
 
 @media screen and (min-width: 45em) {
 
+	#secondary {
+	
 	display: flex;
 	flex-wrap: wrap;
 	padding: 1.5em;
 	justify-content: center;
+	}
 }
-
 .widget {
-	width: 200px;
-	margin: 0.8em 1.8;	
+	width: 300px;
+	margin: 0.8em 1.8;
+	display: block;	
 }
 	
 /* This code will style the widget titles and lists. */

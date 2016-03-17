@@ -1,6 +1,6 @@
 <?php
 	
-function _add_submenu() {
+function authentic_add_submenu() {
 		add_submenu_page( 'themes.php', 'Theme Options', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
 add_action( 'admin_menu', 'authentic_add_submenu' );

@@ -699,7 +699,6 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 50em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -707,17 +706,6 @@ a:active {
 		display: block;
 	}
 }
-
-/* This code sets the menu to display properly on wide screens*/
-
-@media screen and (min-width: 50em) {
-
-.main-navigation ul,
-.main-navigation-toggled ul {
-	
-	text-align: center;
-}
-
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,

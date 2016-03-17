@@ -87,15 +87,6 @@ footer {
 	text-align: center;
 }
 
-aside {
-	float: right;
-	display: block; 
-	background: #737373;
-	margin: 20px;
-	padding: 0;
-	width: 25%;
-}
-
 audio,
 canvas,
 progress,
@@ -881,13 +872,47 @@ a:active {
 .widget {
 	margin: 0 0 1.5em;
 	padding: 1.8em;
+	background-color: #737373;
 }
-	
+
+/* This code will make the widgets responsive to the different screen widths.*/
+
+@media screen and (min-width: 45em) {
+
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1.5em;
+	justify-content: center;
+}
+
+.widget {
+	float: right;
+	width: 300px;
+	margin: 0.8em 1.8;	
+}
+
+/* This code will style the widget titles and lists. */
+
 .widget-title {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	font-size: 1.5em;
 }
+
+.wigdet ol,
+.widget ul {
+	padding: .7em 0 0;
+	list-style-type: none;
+	margin: 0;	
+}
+
+.widget-title {
+	margin-top: .5em
+	margin-bottom: .5em
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

@@ -49,8 +49,9 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 75%;
+  width: 30%;
   display: block;
+  margin: auto;
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -134,12 +135,12 @@ html[xmlns] .flexslider .slides {
   font-family: "flexslider-icon";
   font-size: 40px;
   display: inline-block;
-  content: '\f001';
+  content: '<';
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
-  content: '\f002';
+  content: '>';
 }
 .flex-direction-nav .flex-prev {
   left: -50px;

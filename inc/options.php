@@ -1,102 +1,102 @@
 <?php
 	
-function cd_add_submenu() {
+function _add_submenu() {
 		add_submenu_page( 'themes.php', 'Theme Options', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
-add_action( 'admin_menu', 'cd_add_submenu' );
+add_action( 'admin_menu', 'authentic_add_submenu' );
 	
 
-function cd_settings_init() { 
-	register_setting( 'theme_options', 'cd_options_settings' );
+function authentic_settings_init() { 
+	register_setting( 'theme_options', 'authentic_options_settings' );
 	
 	add_settings_section(
-		'cd_options_page_section', 
+		'authentic_options_page_section', 
 		'Changes to the site can be made through these options.', 
-		'cd_options_page_section_callback', 
+		'authentic_options_page_section_callback', 
 		'theme_options'
 	);
 	
-	function cd_options_page_section_callback() { 
+	function authentic_options_page_section_callback() { 
 		echo 'Options include:';
 	}
 
 	add_settings_field( 
-		'cd_text_field', 
+		'authentic_text_field', 
 		'Enter your text', 
-		'cd_text_field_render', 
+		'authentic_text_field_render', 
 		'theme_options', 
-		'cd_options_page_section' 
+		'authentic_options_page_section' 
 	);
 
 	add_settings_field( 
-		'cd_checkbox_field', 
+		'authentic_checkbox_field', 
 		'Check your preference', 
-		'cd_checkbox_field_render', 
+		'authentic_checkbox_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'authentic_options_page_section'  
 	);
 
 	add_settings_field( 
-		'cd_radio_field', 
+		'authentic_radio_field', 
 		'Choose an option', 
-		'cd_radio_field_render', 
+		'authentic_radio_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'authentic_options_page_section'  
 	);
 	
 	add_settings_field( 
-		'cd_textarea_field', 
+		'authentic_textarea_field', 
 		'Enter content in the textarea', 
-		'cd_textarea_field_render', 
+		'authentic_textarea_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'authentic_options_page_section'  
 	);
 	
 	add_settings_field( 
-		'cd_select_field', 
+		'authentic_select_field', 
 		'Choose from the dropdown', 
-		'cd_select_field_render', 
+		'authentic_select_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'authentic_options_page_section'  
 	);
 
-	function cd_text_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function authentic_text_field_render() { 
+		$options = get_option( 'authentic_options_settings' );
 		?>
-		<input type="text" name="cd_options_settings[cd_text_field]" value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" />
+		<input type="text" name="authentic_options_settings[authentic_text_field]" value="<?php if (isset($options['authentic_text_field'])) echo $options['authentic_text_field']; ?>" />
 		<?php
 	}
 	
-	function cd_checkbox_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function authentic_checkbox_field_render() { 
+		$options = get_option( 'authentic_options_settings' );
 	?>
-		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
+		<input type="checkbox" name="authentic_options_settings[authentic_checkbox_field]" <?php if (isset($options['authentic_checkbox_field'])) checked( 'on', ($options['authentic_checkbox_field']) ) ; ?> value="on" />
 		<label>Turn it On</label> 
 		<?php	
 	}
 	
-	function cd_radio_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function authentic_radio_field_render() { 
+		$options = get_option( 'authentic_options_settings' );
 		?>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="authentic_options_settings[authentic_radio_field]" <?php if (isset($options['authentic_radio_field'])) checked( $options['authentic_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
+		<input type="radio" name="authentic_options_settings[authentic_radio_field]" <?php if (isset($options['authentic_radio_field'])) checked( $options['authentic_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
+		<input type="radio" name="authentic_options_settings[authentic_radio_field]" <?php if (isset($options['authentic_radio_field'])) checked( $options['authentic_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
 		<?php
 	}
 	
-	function cd_textarea_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function authentic_textarea_field_render() { 
+		$options = get_option( 'authentic_options_settings' );
 		?>
-		<textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
+		<textarea cols="40" rows="5" name="authentic_options_settings[authentic_textarea_field]"><?php if (isset($options['authentic_textarea_field'])) echo $options['authentic_textarea_field']; ?></textarea>
 		<?php
 	}
 
-	function cd_select_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function authentic_select_field_render() { 
+		$options = get_option( 'authentic_options_settings' );
 		?>
-		<select name="cd_options_settings[cd_select_field]">
-			<option value="1" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Option 2</option>
+		<select name="authentic_options_settings[authentic_select_field]">
+			<option value="1" <?php if (isset($options['authentic_select_field'])) selected( $options['authentic_select_field'], 1 ); ?>>Option 1</option>
+			<option value="2" <?php if (isset($options['authentic_select_field'])) selected( $options['authentic_select_field'], 2 ); ?>>Option 2</option>
 		</select>
 	<?php
 	}
@@ -116,4 +116,4 @@ function cd_settings_init() {
 
 }
 
-add_action( 'admin_init', 'cd_settings_init' );
+add_action( 'admin_init', 'authentic_settings_init' );

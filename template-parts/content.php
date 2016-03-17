@@ -28,7 +28,8 @@
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
+//Added excerpts for each post.
+			the_excerpt( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'authentic' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -39,6 +40,8 @@
 				'after'  => '</div>',
 			) );
 		?>
+<!--Read more link for every excerpt.-->
+		<a href="<?php echo get_permalink(); ?>"> Read More...</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

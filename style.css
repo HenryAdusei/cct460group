@@ -717,6 +717,7 @@ a:active {
 	position: relative;
 	min-height: 3.5em;
 	max-width: 80em;
+	margin: auto 100%;
 	padding: 0 3.5em;
 }
 

@@ -79,10 +79,10 @@ main {
 	margin: auto;
     	padding: 0;
    	width: 60%; /* 900px with 30px margin on either side */
-   	float: left;
+
 }
 
-
+header, 
 footer {
 	text-align: center;
 }
@@ -856,6 +856,7 @@ a:active {
 # Widgets
 --------------------------------------------------------------*/
 
+
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
@@ -869,6 +870,8 @@ a:active {
 .widget {
 	margin: 0 0 1.5em;
 	padding: 1.8em;
+	
+	
 }
 
 .widget a {
@@ -878,12 +881,19 @@ a:active {
 
 /* This code will make the widgets responsive to the different screen widths.*/
 
+@media screen and (min-width: 45em) {
 
-.widget {
-	width: 300px;
-	margin: 0.8em 1.8;	
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1.5em;
+	justify-content: center;
 }
 
+.widget {
+	width: 200px;
+	margin: 0.8em 1.8;	
+}
+	
 /* This code will style the widget titles and lists. */
 
 .widget-title {
@@ -906,6 +916,7 @@ a:active {
 	text-transform: uppercase;
 }
 
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -914,10 +925,12 @@ a:active {
 # Global
 --------------------------------------------------------------*/
 .site-main {
-	margin: 1.4em;
+	margin: 1.3em;
 	font-size: .8em;
 	line-height: 1.6em;
 }
+
+/* This code makes the themes responsive to various screen sizes*/
 
 @media screen and (min-width: 30em) {
 	.site-main {
@@ -930,7 +943,7 @@ a:active {
 	}
 }
 
-@media screen and (min-width: 130em) {
+@media screen and (min-width: 55em) {
 	.site-main {
 		max-width: 45em;
 		margin: 1.8em auto;

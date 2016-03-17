@@ -855,9 +855,6 @@ a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-	margin: 0 0 1.5em;
-}
 
 /* Make sure select elements fit in widgets. */
 .widget select {
@@ -875,15 +872,13 @@ a:active {
 	background-color: #737373;
 }
 
+.widget a {
+	text-decoration: none;
+
+}
+
 /* This code will make the widgets responsive to the different screen widths.*/
 
-@media screen and (min-width: 45em) {
-
-	display: flex;
-	flex-wrap: wrap;
-	padding: 1.5em;
-	justify-content: center;
-}
 
 .widget {
 	float: right;
